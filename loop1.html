@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<meta charset = 'UTF-8'>
+</head>
+<body>
+	<p id = "period"></p>
+	<script>
+		function Solution(){
+			var InvestValue = 100;
+			var apr = 42.11;
+			var target = 22400000000;
+			var yrs = 0;
+			
+			while(InvestValue <= target){
+				InvestValue = InvestValue * apr;
+				yrs++;
+				console.log(yrs);
+			}
+			
+			document.getElementById("period").innerHTML = yrs;
+			}
+		
+		Solution();
+	</script>
+</body>
+</html>

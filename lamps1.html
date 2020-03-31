@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<h3> presenting all results </h3>
+<p id = "all"></p>
+<h3> presenting selected results </h3>
+<p id = "sel"></p>
+<h3> presenting results within a HTML table </h3>
+<p id = "Ltable"></p>	
+<script>
+	var x, y = "";
+	// JSON object
+	var myArr = { "lamps":[
+		{"name":"LAP A-:Lamp 1000K LED Lamp BC 10W", "price":9.49, "power":10},
+		{"name":"LAP GU10 LED Lamp Reflector 330Lm 5W", "price":6.49, "power":5},
+		{"name":"Sylvania LED Lamp MR16 350Lm 7W", "price":14.39, "power":7},
+		{"name":"LAP GU10 LED Lamp with Reflector 330Lm 950Cd 5W", "price":6.49, "power":5},
+		{"name":"Osram LED Lamp GU10 385Lm 950Cd 7.5W", "price":13.29, "power":7.5}]};
+	
+	//presenting all data
+	for(i in myArr.lamps){
+		x += myArr.lamps[i].name + " £" + myArr.lamps[i].price + "<br>";
+	}
+	document.getElementById("all").innerHTML = x;
+	
+	//presenting selected data 
+	y = myArr.lamps[3].name + " £" + myArr.lamps[3].price + "<br>";
+	document.getElementById("sel").innerHTML = y;
+	
+	//appending data to table
+	var dpParam, xmlhttp, Arr, txt = "";
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function(){
+		txt += "<table>"
+		for (x in myArr) {
+			txt += "<tr><td>" + myArr.lamps[x].name + "</td></tr>";
+			}
+		txt += "</table>";
+		document.getElementById("Ltable").innerHTML = txt;
+		}
+</script>
+</body>
+</html>

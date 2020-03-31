@@ -1,0 +1,20 @@
+nav ul{
+	margin:0px;
+	padding:0px;
+	width:20eM;
+	background-color:#ECFCFD;
+	list-style:none;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+
+nav li{
+	color:#333;
+	line-height:200%;
+	background:url('ibd.png');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	padding-left:25px;
+	font-family:Arial, Heleveica, sans-serif;
+}

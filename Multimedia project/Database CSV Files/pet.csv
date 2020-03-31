@@ -1,0 +1,17 @@
+PetID,ClientID,TypeID,PetName,PetAge,PetGender,PetWeight,PetColour
+1000,3001,1,chappyDog,2,M,3,biege
+1001,3002,2,chiwado,10,F,1,black
+1002,3003,3,bullyTom,6,F,5,grey
+1003,3004,4,terryToe,4,F,1,white
+1004,3005,5,poody,8,M,1,black
+1005,3006,6,dood,3,F,7,spotted
+1006,3007,7,dood,11,M,10,brown
+1007,3005,8,labbyDee,12,M,11,white
+1008,3005,9,shiTzo,7,F,1,mixed brown
+1009,3008,9,jake,3,M,4,greyish white
+1010,3005,9,goffy,4,M,1,mixed brown
+1011,-,-,-,-,-,-,-
+1012,-,-,-,-,-,-,-
+1013,-,-,-,-,-,-,-
+1014,-,-,-,-,-,-,-
+1015,-,-,-,-,-,-,-

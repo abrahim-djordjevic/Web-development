@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Feedback
+	</title>
+</head>
+<body>
+		<div id = "container">
+		<div id = "header">
+			<a href="/script/index.html"> <img id = "logo" src = '/script/images/Logo1.png' alt = "Logo"/> </a>
+		</div>
+
+		<div class = "topnav">
+			<a href="/script/Feedback.html" class = 'button'> Feedback </a>
+			<a href="/script/Doctors.php" class = "button"> Doctors </a>
+			<a href="/script/Appointments.php" class = "button"> Appointments </a>
+			<a href="/script/Pets.php" class = "button"> Pets </a>
+			<a href="/script/index.html" class = "button"> Home </a>
+		</div>
+		
+		<div class = "FeedbackDetails">
+			<form action = "feedback.php" method = "post">
+				First name:<br>
+				<input type = "text" name = "firstname"><br><br>
+				Last name:<br>
+				<input type = "text" name = "lastname"><br><br>
+				Email:<br>
+				<input type = "text" name = "email"><br><br>
+				Feedback:<br>
+				<textarea type = "text" name = "details" cols = = "10"></textarea>
+				<br>
+				<br>
+				<input type = "submit">
+			</form>
+			<?php
+				$conn = mysql_connect("localhost", "root", "", "npc"); //establish connection
+				if(isset($_POST['search'])){
+					$firstName = $_POST['firstname'];
+					$lastName = $_POST['lastname'];
+					$email = $_POST['email'];
+					$details = $_POST['details'];
+					//Insert Query
+					$sql = mysql_query("insert into feedback(firstname, lastname, email, details) values ('$firstName', '$lastName', '$email', '$details)");
+					echo "<br><br><span> Data Inserted </span>";
+				}
+				mysql_close($conn);
+			?>
+		</div>
+</body>
+</html>

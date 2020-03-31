@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Pets
+	</title>
+</head>
+<body>
+		<div id = "container">
+		<div id = "header">
+			<img id = "logo" src = "images/Logo1.png"> 
+		</div>
+
+		<div class = "topnav">
+			<a href="feedback.html" class = "button"> Feedback </a>
+			<a href="http://google.com" class = "button"> Contact Us</a>
+			<a href="http://google.com" class = "button"> Appointments </a>
+			<a href="http://google.com" class = "button"> Pets </a>
+			<a href="index.html" class = "button"> Home </a>
+		</div>
+		<div class = "pets">
+			<?php
+				$con = mysqli_connect("localhost", "root", "", "npc");
+				$sql = "SELECT * FROM pets";
+				$result = $con->query($sql);
+				if ($result->num_rows > 0){
+					while($row = $result->fetch_assoc()){
+						echo ("PetID:".$row["PetID"]."<br>");
+					}
+				}
+			?>
+		
+		</div>
+		
+</body>
+</html>

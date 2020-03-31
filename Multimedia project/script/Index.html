@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Home
+	</title>
+</head>
+<body>
+	<div id = "container">
+		<div id = "header">
+			<a href="/script/index.html"> <img id = "logo" src = '/script/images/Logo1.png' alt = "Logo"/> </a>
+		</div>
+
+		<div class = "topnav">
+			<a href="/script/feedback.php" class = 'button'> Feedback </a>
+			<a href="/script/Doctors.php" class = "button"> Doctors </a>
+			<a href="/script/Appointments.php" class = "button"> Appointments </a>
+			<a href="/script/Pets.php" class = "button"> Pets </a>
+			<a href="/script/index.html" class = "button"> Home </a>
+		</div>
+
+		<div class = "center">
+			<div class = "welcome">
+				<h3> Welcome to Noah's Pet Clinic</h3>
+				<p> We are a small independent animal hospital based
+					in manchester. Although we mostly treat dogs, 
+					our staff are trained to treat a wide variety of pets from cats to parrots.
+					Here at Noahs pet clinic we offer a wide range of service at affordable prices with a high degree
+					of professionality, always delivering service with a smile.
+					
+					
+				</p>
+			</div>
+
+			<div class = "animation">
+				<img name ="slide" class ="center" id = "slide" style = "width:100%;"/>
+				<script src = "animation.js"></script>
+			</div>
+			
+		<div id = "productBanner">
+			<h2 style= "text-align:center;"> Our Products</h2>
+		</div>
+		
+		<div class = "slideshow-container">
+		<script src = "carosel.js"></script>
+			<div class = "mySlides fade">
+				<img src = "images/Microchip.jpg" alt = Microchip Offer  style = "width:100%;"/>
+			</div>
+			
+			<div class = "mySlides fade">
+				<img src = "images/CTAmobile_ReqAp.jpg" alt = "Insurance Offer" style = "width:100%;"/>
+			</div>			
+
+			<div class = "mySlides fade">
+				<img src = "images/Dogteeth.jpg" alt = "Detistry Offer"  style = "width:100%;"//>
+			</div>
+	
+			<a class = "prev" onclick = 'plusSlides(-1)'> &#10094; </a>
+			<a class = "next" onclick = 'plusSlides(1)'> &#10095; </a>		
+			<br/>
+		</div>
+
+		<div class = "services">
+			<h2 style = "text-align:center;"> Our Services </h2>
+		</div>
+
+		<div class = "servList1">
+			<ul ref = "a" style = "list-style:none;">
+				<li>Microchipping</li>
+				<li>Consultations</li>
+				<li>Vaccinations</li>
+				<li>Dietary Appointments</li>
+			</ul>
+
+			<ul ref = "b" style = "list-style:none;">
+				<li>Emergency Appointments</li>
+				<li>Out of Hours care </li>
+				<li>Home Visits</li>
+				<li>Referral Services</li>
+			</ul>
+		</div>
+		<div class = "feedback">
+			<h2 style = "text-align:center;"> Reviews </h2>
+		</div>
+		<div class = "review_1">
+			<h3> Ms Rafferty </h3>
+			<p> 
+				 Lovely professional staff, always friendly to me and my dogs whose names they remember, 
+				 treat them gently and take great care of them, always explain treatments and costs and 
+				 allow you to make decisions, very nice waiting area and have times when you can just walk in
+				 as well as appointments, would absolutely recomend.
+			</p>
+			</div>
+		
+		<div class = "review_2">
+			<h3> Ian Duckworth </h3>
+			<p>
+				Good quality care, clean, friendly and as Vets go reasonably price. Brilliant for parking! 
+			</p>
+		</div>
+		</div>
+		
+		<div class = "footer">
+			<ul id = "conList1" >
+				<li> Phone: 0161 434 265 </li>
+				<li> Email: info@NPC.co.uk </li>
+				<li> Address: 123 Newcastle Street </li>
+				<li> PostCode: M2 4SQ </li>
+			</ul>
+		</div>
+		</div>
+</body>
+</html>

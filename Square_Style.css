@@ -1,0 +1,35 @@
+#CTL{
+	position:absolute;
+	top:200px;
+	left:200px;
+	height:200px;
+	width:200px;
+	background-color:#F5EEb5;
+}
+
+#CTR{
+	position:absolute;
+	top:200px;
+	left:600px;
+	height:200px;
+	width:200px;
+	background-color:pink;
+}
+
+#CBL{
+	position:absolute;
+	top:600px;
+	left:200px;
+	height:200px;
+	width:200px;
+	background-color:#579857;
+}
+
+#CBR{
+	position:absolute;
+	top:600px;
+	left:600px;
+	height:200px;
+	width:200px;
+	background-color:#6d747c;
+}

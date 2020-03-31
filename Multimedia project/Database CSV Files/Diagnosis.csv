@@ -1,0 +1,9 @@
+DiagnosisID,AppID,DeferralID,ReferralID,PharmacyID,Diagnosis,Medication,MedicationCost
+6000,4000,-,-,-,Bring him Tuesdays 10 to 12pm,-,-
+6001,4001,-,-,7001,Get Drug AA from Smiths Pharmacy,AA,-
+6002,4004,-,-,-,Take Park walks every evening,-,-
+6003,4005,-,-,-,Surgery on 21-Nov-2019,-,-
+6004,-,-,-,-,-,-,-
+6005,-,-,-,-,-,-,-
+6006,-,-,-,-,-,-,-
+6007,-,-,-,-,-,-,-

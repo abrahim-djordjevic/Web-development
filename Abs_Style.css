@@ -1,0 +1,15 @@
+#content{
+	position:absolute;
+	top:100px;
+	left:100px;
+	background-color:#B0C4DE;
+	width:40eM;
+	height:15eM;
+	text-align:center;
+}
+
+#container{
+	background-color:#778899;
+	text-align:center;
+	height:22eM;
+}

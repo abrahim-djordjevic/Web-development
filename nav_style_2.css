@@ -1,0 +1,25 @@
+nav ul{	
+	list-style:none;
+}
+nav a{
+	text-decoration:none;
+}
+nav li{
+	color:#333;
+	line-height:200%;
+	background:url('ibd.png');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position: left center;
+	font-family:Arial, Heleveica, sans-serif;
+
+	border-style:solid;
+	border-radius:25px;
+	border-width:1px;
+	border-color:#006;
+	padding:25px 25px 25px 25px;
+	display:table;
+	width:300px;
+	margin-right:25px;
+	background-color:#ECFCFD;
+}
